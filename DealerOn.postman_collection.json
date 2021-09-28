@@ -1,0 +1,149 @@
+{
+	"info": {
+		"_postman_id": "ac9dfc97-fccc-4521-a842-cc97c4dcd0a5",
+		"name": "DealerOn",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Trains",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Routes\":[\n\t\t{\n\t\t\t\"StartPoint\": \"A\",\n\t\t\t\"EndPoint\" : \"B\",\n\t\t\t\"Distance\" : 5\n\t\t},\n        {\n\t\t\t\"StartPoint\": \"B\",\n\t\t\t\"EndPoint\" : \"C\",\n\t\t\t\"Distance\" : 4\n\t\t},\n        {\n\t\t\t\"StartPoint\": \"C\",\n\t\t\t\"EndPoint\" : \"D\",\n\t\t\t\"Distance\" : 8\n\t\t},\n        {\n\t\t\t\"StartPoint\": \"D\",\n\t\t\t\"EndPoint\" : \"C\",\n\t\t\t\"Distance\" : 8\n\t\t},\n        {\n\t\t\t\"StartPoint\": \"D\",\n\t\t\t\"EndPoint\" : \"E\",\n\t\t\t\"Distance\" : 6\n\t\t},\n        {\n\t\t\t\"StartPoint\": \"A\",\n\t\t\t\"EndPoint\" : \"D\",\n\t\t\t\"Distance\" : 5\n\t\t},\n        {\n\t\t\t\"StartPoint\": \"C\",\n\t\t\t\"EndPoint\" : \"E\",\n\t\t\t\"Distance\" : 2\n\t\t},\n        {\n\t\t\t\"StartPoint\": \"E\",\n\t\t\t\"EndPoint\" : \"B\",\n\t\t\t\"Distance\" : 3\n\t\t},\n        {\n\t\t\t\"StartPoint\": \"A\",\n\t\t\t\"EndPoint\" : \"E\",\n\t\t\t\"Distance\" : 7\n\t\t}\n\t]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:7071/api/trains",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"api",
+						"trains"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mars Rover",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"LimitX\" : 5,\n    \"LimitY\" : 5,\n\t\"Rovers\":[\n\t\t{\n\t\t\t\"PositionX\": 1,\n\t\t\t\"PositionY\" : 2,\n\t\t\t\"PositionZ\" : \"N\",\n            \"Command\" : \"LMLMLMLMM\"\n\t\t},\n        {\n\t\t\t\"PositionX\": 3,\n\t\t\t\"PositionY\" : 3,\n\t\t\t\"PositionZ\" : \"E\",\n            \"Command\" : \"MMRMMRMRRM\"\n\t\t}\n\t]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:7071/api/marsrovers",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"api",
+						"marsrovers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SalesTaxes Input 1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Items\":[\r\n        {\r\n            \"Quantity\": 1,\r\n            \"Description\" : \"Book\",\r\n            \"Value\" : 12.49\r\n        },\r\n        {\r\n            \"Quantity\": 1,\r\n            \"Description\" : \"Book\",\r\n            \"Value\" : 12.49\r\n        },\r\n        {\r\n            \"Quantity\": 1,\r\n            \"Description\" : \"Music CD\",\r\n            \"Value\" : 14.99\r\n        },\r\n        {\r\n            \"Quantity\": 1,\r\n            \"Description\" : \"Chocolate Bar\",\r\n            \"Value\" : 0.85\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:7071/api/salestaxes",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"api",
+						"salestaxes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SalesTaxes Input 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Items\":[\r\n        {\r\n            \"Quantity\": 1,\r\n            \"Description\" : \"Imported box of chocolates\",\r\n            \"Value\" : 10.00\r\n        },\r\n        {\r\n            \"Quantity\": 1,\r\n            \"Description\" : \"Imported bottle of perfume\",\r\n            \"Value\" : 47.50\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:7071/api/salestaxes",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"api",
+						"salestaxes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SalesTaxes Input 3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Items\":[\r\n        {\r\n            \"Quantity\": 1,\r\n            \"Description\" : \"Imported bottle of perfume\",\r\n            \"Value\" : 27.99\r\n        },\r\n        {\r\n            \"Quantity\": 1,\r\n            \"Description\" : \"bottle of perfume\",\r\n            \"Value\" : 18.99\r\n        },\r\n        {\r\n            \"Quantity\": 1,\r\n            \"Description\" : \"Packet of headache pills\",\r\n            \"Value\" : 9.75\r\n        },\r\n        {\r\n            \"Quantity\": 1,\r\n            \"Description\" : \"Imported box of chocolates\",\r\n            \"Value\" : 11.25\r\n        },\r\n        {\r\n            \"Quantity\": 1,\r\n            \"Description\" : \"Imported box of chocolates\",\r\n            \"Value\" : 11.25\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:7071/api/salestaxes",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"api",
+						"salestaxes"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
